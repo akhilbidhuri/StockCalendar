@@ -8,7 +8,6 @@ class calendar extends Component{
     componentWillMount(){
         getData()
     }
-
     render(){
         return (<div style={{marginLeft:'3%', marginTop:'5%'}}>
             {!this.props.request && 

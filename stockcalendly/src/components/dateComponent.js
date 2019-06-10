@@ -17,12 +17,17 @@ const Modal = ({ handleClose, show, children }) => {
 
 class date extends Component{
 
-    state = { show: false}
+    state = { show: false, wrong:false}
     addData = (id, date, e) =>{
         let price = document.getElementById(this.props.id).value
-        console.log(e.target.value)
+        if(Number(price)){
+        //console.log(e.target.value)
         add(id, date, price)
         this.setState({show: false})
+        }
+        else{
+          this.setState({wrong:true})
+        }
     }
     showModal = () => {
       this.setState({ show: true });
@@ -56,6 +61,11 @@ class date extends Component{
                         />
                         <img type="submit" ref={this.priceInput} className="subut" src="https://img.icons8.com/color/48/000000/circled-chevron-right.png" alt="submit" onClick={(e)=>this.addData(this.props.id, this.props.date, e)}/>
                     </div>
+                    {this.state.wrong && 
+                    <div className="wrong">
+                      <h4 style={{padding:'2%'}}>Enter Correct Value</h4>
+                      </div>
+                    }
                 </Modal>
             </div>
         )
