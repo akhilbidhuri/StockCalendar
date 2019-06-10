@@ -1,7 +1,67 @@
 .App {
+}
+.ltext{
+  color:#faf7fb;
+  display: inline;
+  margin-top:4px;
+  font-weight: 700;
+}
+.delete{
+  margin:1%;
+  height: 24px;
+  width: 24px;
+  float:right;
+  padding-bottom:2%
+}
+.delete:hover{
+  background: #CE93D8;
+  border-radius: 50%;
+}
+.add{
+  margin-left:10%;
+  height: 30px;
+  width: 30px;
+}
+.add:hover{
+  background: #A5D6A7;
+  border-radius: 50%;
+}
+.date{
+  margin: 5px;
+  display: inline-block;
+  width: 12%;
+  min-height: 13%;
+  background: #fff;
+  border: 1px solid #cacaca;
+  border-radius: 20px;
+}
+.text{
+  font-weight: 450;
+}
+.stext{
+  margin:0px;
+  padding: 0px;
+  font-size: 140%;
   text-align: center;
 }
-
+.logo{
+  height:5vh;
+  width:3vw;
+  display: inline;
+}
+.head{
+  width:100%;
+  height: 5vh;
+  display: flex;
+}
+.calendar{
+  width: 65%;
+  height:100vh;
+}
+.graphdata{
+  width: 35%;
+  height:100vh;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -30,4 +90,74 @@
   to {
     transform: rotate(360deg);
   }
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.modal-main {
+  border-top:10px solid #7b2ca3;
+  border-bottom:10px solid #2dc161;
+  text-align: center;
+  position:fixed;
+  background: white;
+  width: 35%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
+}
+.close{
+  border:none;
+  height: 30px;
+  width:30px;
+  float: right;
+  margin:2%;
+}
+.close:hover{
+  background:#ef9a9a;
+  border-radius:50%;
+}
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+input{
+  font-weight: 500;
+  width:60px;
+  text-align: center;
+  outline: none;
+  background: #eee;
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+  margin-bottom: 3%;
+  display: inline-block;
+}
+.subut{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+.subut:hover{
+  background: #9575CD;
+  border-radius: 50%;
+}
+.field{
+  display: flex;
+  text-align: center;
+  margin-left:37%;
+}
+.back{
+  background: #E1BEE7;
+  border-radius: 10px;
 }

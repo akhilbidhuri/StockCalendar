@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import {Column, Row} from 'simple-flexbox';
+import Logo from './wealthy.jpg'
+import Calender from './components/calendar'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Row>
+      <Column className="calendar" style={{borderRight:'1px solid #ddd'}}>
+      <div className="head" style={{background:'#7b2ca3'}}>
+        <img src={Logo} alt="logo" className="logo"/>
+        <span className="ltext">wealthy</span>
+      </div>
+      <Calender/>
+      </Column>
+      <Column className="graphdata">
+        <div className="head" style={{background:'#2dc161'}}>
+        <img className="logo" src="https://img.icons8.com/plasticine/100/000000/combo-chart.png" alt="indicator"/>
+          <span className="ltext" style={{marginLeft:'2%'}}>Indicator</span>
+        </div>
+      </Column>
+    </Row>
   );
 }
 
