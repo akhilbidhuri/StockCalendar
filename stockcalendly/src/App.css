@@ -92,6 +92,7 @@
   }
 }
 .modal {
+  z-index: 4;
   position: fixed;
   top: 0;
   left: 0;
@@ -111,6 +112,7 @@
   left:50%;
   transform: translate(-50%,-50%);
   border-radius: 20px;
+  z-index: 2;
 }
 .close{
   border:none;
@@ -207,4 +209,15 @@ input{
   border-radius: 20px; 
   width: fit-content;
   margin-left: 32%;
+}
+.profit{
+  background: #BBDEFB;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding:2%;
+}
+.dates{
+  background:#43A047;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }

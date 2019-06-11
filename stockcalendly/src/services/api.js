@@ -1,7 +1,7 @@
 import axios from 'axios';
 import store from '../store/store';
 import {REQUEST, GET, DATEREQ, GETDATE, EMPTY} from '../store/actions'
-var baseUrl = 'http://localhost:5000/'
+var baseUrl = 'https://stockcalendly.herokuapp.com/'
 
 export const getDate = (price) =>{
     store.dispatch({type:DATEREQ})
