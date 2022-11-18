@@ -8,9 +8,9 @@
     "react-dom": "^16.8.6",
     "react-loader-spinner": "^2.3.0",
     "react-redux": "^7.0.3",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "redux": "^4.0.1",
-    "simple-flexbox": "^2.0.0"
+    "simple-flexbox": "^2.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
